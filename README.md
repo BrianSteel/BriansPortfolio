@@ -6,10 +6,10 @@ Few things to watch out for:
 
 - Not many useful buttons. I will update it later.
 - Fully responsive 😀
-- form validation added
+- form validation added 😀
 - not backed by database
-- awesome dark theme (check it out)
+- awesome dark theme (check it out) 😀
 
 
-### Website link:
+### Website link: 😀
 https://briansteel.github.io/Portfolio

@@ -42,10 +42,14 @@ function logErr() {
         errLog.textContent = "Send me a hello at least! :)";
         return false;
     } else {
+        errLog.style.color = 'green';
         setTimeout(function(){
             errLog.textContent = " ";
         }, 3000)
         errLog.textContent = `Thanks for reaching out me. Good day, ${name}!`;
+        document.querySelector('.input1').value = ""; 
+        document.querySelector('.input2').value = ""; 
+        document.querySelector('.textarea').value = ""; 
     }
 }
 
