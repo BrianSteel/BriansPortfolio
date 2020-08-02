@@ -8,10 +8,25 @@ const code = document.querySelector('.btn');
 const emailIcon = document.querySelector('.icon-email');
 const githubIcon = document.querySelector('.icon-github');
 const submit = document.querySelector('.submit');
+const img = document.querySelector('nav img');
+// need to edit this
+const iIcon1 = document.getElementById('i1');
+const iIcon2 = document.getElementById('i2');
+const iIcon3 = document.getElementById('i3');
+const iIcon4 = document.getElementById('i4');
+// need to edit this
+
 
 function toggleHeight() {
     nav.classList.toggle('collapse');
     checkBox.classList.toggle('CheckBoxBlock');
+    img.classList.toggle('show');
+    // need to edit this
+    iIcon1.classList.toggle('show');
+    iIcon2.classList.toggle('show');
+    iIcon3.classList.toggle('show');
+    iIcon4.classList.toggle('show');
+    // need to edit this
 }
 
 function checked() {

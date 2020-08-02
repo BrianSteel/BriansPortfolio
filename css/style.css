@@ -428,6 +428,10 @@ footer.footer .move-up span:hover {
     background: #111;
 }
 
+.show{
+    display: initial;
+}
+
 /* ..........................media queries..................... */
 
 @media screen and (max-width: 1200px) {
@@ -446,9 +450,6 @@ footer.footer .move-up span:hover {
         display: initial;
         left: 1rem;
     }
-    nav img {
-        display: none;
-    }
     nav p {
         color: var(--secondary);
     }
@@ -460,6 +461,9 @@ footer.footer .move-up span:hover {
     }
     .CheckBoxBlock {
         display: block;
+    }
+    nav img, #i{
+        display:none;
     }
 }
 
@@ -498,7 +502,7 @@ footer.footer .move-up span:hover {
     #contact-us {
         font-size: 14px;
     }
-    input, textarea {
+    #contact-us input, textarea {
         width: 20rem;
         max-width: 20rem;
         min-width: 20rem;
@@ -507,7 +511,6 @@ footer.footer .move-up span:hover {
         font-size: 0.9rem;
         height: 100px;
     }
-}
 
 @media screen and (max-width: 625px) {
     #main section .about-me {
@@ -525,7 +528,7 @@ footer.footer .move-up span:hover {
         display: none!important;
     }
     /* Need to change this */
-    input, textarea {
+    #contact-us input, textarea {
         width: 15rem;
         max-width: 15rem;
         min-width: 15rem;
@@ -583,7 +586,7 @@ footer.footer .move-up span:hover {
         height: 100px;
     }
     #main section .btn2 {
-        width: 5rem;
+        width: 8rem;
         font-size: 0.8rem;
     }
     #main section .btn {
@@ -597,12 +600,12 @@ footer.footer .move-up span:hover {
 }
 
 @media screen and (max-width: 350px) {
-    input, textarea {
+    #contact-us input, textarea {
         width: 5rem;
         height: 0.7rem;
         font-size: 0.7rem;
     }
-    input {
+    #contact-us input {
         display: inline-block;
         margin: 0;
     }
