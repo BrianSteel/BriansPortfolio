@@ -462,8 +462,11 @@ footer.footer .move-up span:hover {
     .CheckBoxBlock {
         display: block;
     }
-    nav img, #i{
+    nav img{
         display:none;
+    }
+    #i1, #i2, #i3, #i4{
+        color:var(--secondary);
     }
 }
 
