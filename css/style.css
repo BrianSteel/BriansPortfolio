@@ -1,0 +1,640 @@
+/* ..........................variables..................... */
+
+:root {
+    --primary: #54B689;
+    --secondary: #fafafa;
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Rowdies', cursive;
+    --primary-font-color: #243d44;
+}
+
+/* ..........................reset..................... */
+
+html, body, ul, p, li, a, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: #eee;
+}
+
+/* ..........................Global..................... */
+
+body nav {
+    position: sticky;
+    position: -webkit-sticky;
+    /* Safari */
+    top: 0;
+    background: var(--primary);
+    width: 20%;
+    font-family: var(--secondary-font);
+    text-align: center!important;
+    padding: 1rem;
+    color: #eee;
+    overflow: visible;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    padding: 0 0 1.5rem 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+p {
+    font-family: var(--primary-font);
+    font-size: 0.8rem;
+}
+
+li {
+    font-family: var(--primary-font);
+    font-size: 0.8rem;
+}
+
+a {
+    font-size: 0.7rem;
+}
+
+input, textarea {
+    border: none;
+    background: var(--secondary);
+    padding: 0.5rem;
+    border: 2px solid steelblue;
+    border-radius: 5px;
+    display: block;
+    margin: 1rem auto;
+    width: 30rem;
+}
+
+textarea {
+    max-width: 30rem;
+    min-width: 30rem;
+    max-height: 20rem;
+    min-height: 15rem;
+    height: 15rem;
+}
+
+/* ..........................navigation..................... */
+
+#body {
+    display: flex;
+    margin: 80px 80px 20px 80px;
+    align-items: flex-start;
+    box-shadow: -2px 2px 5px #444, -5px 5px 10px #444, -5px 5px 20px #444;
+}
+
+nav img {
+    width: 10rem;
+    height: 10rem;
+    border: 3px solid var(--secondary);
+    border-radius: 50%;
+}
+
+nav p {
+    padding: 0rem 0 1rem 0;
+    font-size: 1rem;
+    margin: 0.5rem;
+}
+
+nav p span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+nav .toggle-icons {
+    display: none;
+}
+
+.primary-icons .icon {
+    font-size: 1.5rem;
+    margin: 1rem 0.5rem;
+    color: var(--secondary)
+}
+
+.primary-icons .icon:hover {
+    cursor: pointer;
+}
+
+.icons li a {
+    margin-left: 1rem;
+    color: var(--secondary)
+}
+
+.icons li {
+    text-align: left;
+    margin: 1rem 0;
+}
+
+input[type="checkbox"] {
+    position: relative;
+    height: 20px;
+    width: 60px;
+    appearance: none;
+    -webkit-appearance: none;
+    background: linear-gradient(0deg, #006b39, #004122);
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 0 0 4px #006e39, 0 0 0 5px #017539, inset 0 5px 20px rgb(0, 85, 33, 0.5), inset 0 0px 15px rgb(0, 85, 33, 0.2);
+}
+
+input:checked[type="checkbox"] {
+    background: linear-gradient(0deg, #6dffc7, #1d9942);
+    box-shadow: 0 0 1px #6dffc7, 0 0 0 4px #006e39, 0 0 0 5px #017539, inset 0 5px 20px rgb(0, 85, 33, 0.5), inset 0 0px 15px rgb(0, 85, 33, 0.2);
+}
+
+input[type="checkbox"]:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 20px;
+    background: linear-gradient(0deg, #015e31, #008b4a);
+    border-radius: 20px;
+    box-shadow: 0 0 0 1px #005f26;
+    transform: scale(.98, .96);
+    transition: 0.5s;
+}
+
+input:checked[type="checkbox"]:before {
+    left: 25px;
+}
+
+input[type="checkbox"]:after {
+    content: '';
+    position: absolute;
+    top: calc(50% - 2.5px);
+    left: 25px;
+    width: 5px;
+    height: 5px;
+    background: linear-gradient(0deg, #008b4a, rgb(0, 58, 0));
+    border-radius: 50%;
+    transition: .5s;
+}
+
+input:checked[type="checkbox"]:after {
+    background: #4ef198;
+    left: 50px;
+    box-shadow: 0 0 5px #13ffa5, 0 0 15px, #13ffa5;
+}
+
+/* ..........................sidebar..................... */
+
+/* .........................about me..................... */
+
+#main {
+    background: #fff;
+    width: 100%;
+    font-family: var(--primary-font);
+    color: var(--primary-font-color);
+}
+
+#main section .about-me {
+    padding-top: 3rem;
+    padding-left: 3rem;
+    background: var(--secondary);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#main section .about-me img {
+    width: 300px;
+    height: 300px;
+    border: 5px solid var(--primary-font-color);
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+}
+
+#main section #about p:nth-of-type(1) {
+    margin: 2rem 0 0 0;
+}
+
+#main section #about p:nth-of-type(2) {
+    margin: 1rem 0 0 0;
+}
+
+#main section .btn {
+    background: var(--primary);
+    font-family: var(--primary-font);
+    border: none;
+    margin: 1rem 1rem 1rem 0;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    color: #163526;
+    width: 13rem;
+}
+
+#main section .btn2 {
+    font-family: var(--primary-font);
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    background: #4f4f4f;
+    border: none;
+    color: var(--secondary)
+}
+
+#main section .btn:hover {
+    background: #459670;
+    color: var(--secondary);
+}
+
+#main section .btn2:hover {
+    background: black;
+    color: var(--secondary);
+}
+
+/* .........................Framework..................... */
+
+#main section #frameworks {
+    margin-top: 4rem;
+}
+
+#main section #frameworks h3::before {
+    content: '';
+    border-left: 5px solid var(--primary);
+    padding-right: 1rem;
+    box-sizing: border-box;
+    margin-left: 3rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 3rem 1rem 0;
+}
+
+.grid-container .grid-items {
+    background: var(--secondary);
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+.grid-container .grid-items li {
+    line-height: 2rem;
+}
+
+.grid-items img {
+    width: 170px;
+    height: 100px;
+    margin: 1rem 0;
+}
+
+.grid-items img[src="./assets/vue.png"] {
+    width: 110px;
+    height: 90px;
+}
+
+.grid-items img[src="./assets/js.jpg"] {
+    width: 100px;
+    height: 100px;
+}
+
+.grid-items img[src="./assets/others.png"] {
+    width: 100px;
+    height: 100px;
+}
+
+/* .........................Projects..................... */
+
+#main section #projects {
+    margin-top: 4rem;
+}
+
+#main section #projects img {
+    width: 100%;
+    height: 80%;
+}
+
+#main section #projects h3::before {
+    content: '';
+    border-left: 5px solid var(--primary);
+    padding-right: 1rem;
+    box-sizing: border-box;
+    margin-left: 3rem;
+}
+
+#projects .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#projects .grid-items {
+    height: 300px;
+    padding-bottom: 2rem;
+}
+
+/* .........................contact..................... */
+
+#contact-us {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#contact-us .contact-items{
+    text-align: center;
+}
+
+#contact-us h3::before {
+    content: '';
+    border-left: 5px solid var(--primary);
+    padding-right: 1rem;
+    box-sizing: border-box;
+    margin-left: 3rem;
+}
+
+#contact-us h3 {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+#contact-us button {
+    background: #ccc;
+    font-family: var(--primary-font);
+    margin: 1rem;
+    border: 3px solid #bbb;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    color: #163526
+}
+
+#contact-us button:hover {
+    background: #bbb;
+    border: 3px solid #aaa;
+    color: #163526
+}
+
+/* .........................footer..................... */
+
+footer {
+    background: var(--primary-font-color);
+    color: var(--secondary);
+    height: 10rem;
+    padding: 1rem 0 0 0;
+}
+
+.footer h4 {
+    margin: 0;
+    position: relative;
+    top: 4rem;
+    text-align: center;
+    height: 100px;
+}
+
+footer.footer .move-up {
+    position: fixed;
+    right: 8%;
+    bottom: 10%;
+}
+
+footer.footer .move-up span {
+    color: rgb(116, 116, 116);
+    font-size: 1.5rem;
+}
+
+footer.footer .move-up span:hover {
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.dark0 {
+    background: #838383;
+}
+
+.dark {
+    background: #3c3c3c;
+}
+
+.dark1 {
+    background: #111;
+}
+
+/* ..........................media queries..................... */
+
+@media screen and (max-width: 1200px) {
+    #body {
+        margin: 0;
+        display: block;
+    }
+    body nav {
+        position: initial;
+        width: initial;
+        max-height: 40px;
+    }
+    nav .toggle-icons {
+        position: absolute;
+        top: 22px;
+        display: initial;
+        left: 1rem;
+    }
+    nav img {
+        display: none;
+    }
+    nav p {
+        color: var(--secondary);
+    }
+    .collapse {
+        max-height: initial;
+    }
+    .toggle {
+        display: none;
+    }
+    .CheckBoxBlock {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .grid-container .grid-items:nth-of-type(4) {
+        grid-column: 2/3;
+        grid-row: 2/3
+    }
+    #projects .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    #main section .btn2 {
+        width: 10rem;
+        margin: 0;
+        font-size: 1.2rem;
+    }
+    #main section .btn {
+        width: 10rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #main section .about-me img {
+        width: 200px;
+        height: 200px;
+        border: 3px solid var(--primary-font-color);
+        margin: 10px;
+    }
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    #contact-us {
+        font-size: 14px;
+    }
+    input, textarea {
+        width: 20rem;
+        max-width: 20rem;
+        min-width: 20rem;
+    }
+    .footer h4 {
+        font-size: 0.9rem;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    #main section .about-me {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-left: 0;
+        padding: 1rem;
+    }
+    #main section .about-me {
+        /* Needs a div around buttons to make this happen */
+        text-align: center;
+    }
+    /* Need to change this */
+    footer.footer .move-up span i {
+        display: none!important;
+    }
+    /* Need to change this */
+    input, textarea {
+        width: 15rem;
+        max-width: 15rem;
+        min-width: 15rem;
+    }
+    textarea {
+        height: 10rem;
+        max-height: 12rem;
+        min-height: 10rem;
+    }
+    .grid-container {
+        display: initial;
+        padding: 0!important;
+    }
+    .grid-container .grid-items {
+        padding: 0;
+        text-align: center;
+        height: 25rem;
+        margin: 2rem 1rem;
+    }
+    .grid-container ul {
+        line-height: 0.8rem;
+    }
+    #projects .grid-container {
+        grid-template-columns: 100%;
+    }
+    #main section #projects img {
+        width: 80%;
+        height: 80%;
+    }
+    .footer h4 {
+        font-size: 0.8rem;
+        height: 100px;
+    }
+    h1 {
+        text-align: center;
+    }
+    h3 {
+        text-align: center!important;
+    }
+    h3::before {
+        content: none!important;
+    }
+    p {
+        text-align: center;
+    }
+    .footer h4 {
+        font-size: 0.7rem;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer h4 {
+        font-size: 0.6rem;
+        height: 100px;
+    }
+    #main section .btn2 {
+        width: 5rem;
+        font-size: 0.8rem;
+    }
+    #main section .btn {
+        width: 8rem;
+        font-size: 0.8rem;
+    }
+    h2 {
+        margin: 0.4rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    input, textarea {
+        width: 5rem;
+        height: 0.7rem;
+        font-size: 0.7rem;
+    }
+    input {
+        display: inline-block;
+        margin: 0;
+    }
+    textarea {
+        width: 12rem;
+        max-width: 12rem;
+        min-width: 12rem;
+        height: 8rem;
+        max-height: 10rem;
+        min-height: 8rem;
+    }
+    #contact-us button {
+        margin: 0;
+        padding: 0.5rem;
+        font-size: 0.8rem;
+        width: 5rem;
+    }
+    input[type="checkbox"] {
+        margin: 1rem auto 0 auto;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    textarea {
+        width: 8rem;
+        max-width: 8rem;
+        min-width: 8rem;
+        height: 5rem;
+        max-height: 8rem;
+        min-height: 5rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}
