@@ -511,7 +511,7 @@ footer.footer .move-up span:hover {
         font-size: 0.9rem;
         height: 100px;
     }
-
+}
 @media screen and (max-width: 625px) {
     #main section .about-me {
         display: flex;
