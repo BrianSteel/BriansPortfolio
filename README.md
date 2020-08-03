@@ -13,7 +13,7 @@ Few things to watch out for:
 
 ### Resume
 See my Resume here
-https://github.com/BrianSteel/Portfolio/blob/master/assets/Sthitadhee_Resume_weDevs_3rd_August_2020.pdf
+https://github.com/BrianSteel/Portfolio/blob/master/assets/Brian_Resume.pdf
 
 
 ### Website link: 😀
