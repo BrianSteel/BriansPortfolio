@@ -11,5 +11,10 @@ Few things to watch out for:
 - awesome dark theme (check it out) 😀
 
 
+### Resume
+See my Resume here
+https://github.com/BrianSteel/Portfolio/blob/master/assets/Sthitadhee_Resume_weDevs_3rd_August_2020.pdf
+
+
 ### Website link: 😀
 https://briansteel.github.io/Portfolio
