@@ -60,7 +60,8 @@ function emailfunc() {
 }
 
 function githubfunc() {
-    window.setTimeout(function () { location.href = "https://github.com/BrianSteel" }, 0);
+    /* window.setTimeout(function () { location.href = "https://github.com/BrianSteel" }, 0); */
+    window.setTimeout(window.open('https://github.com/BrianSteel', '_blank'), 0);
 }
 
 function githubCode() {
@@ -73,7 +74,7 @@ function scrollToTop(event) {
         document.body.scrollTop || document.documentElement.scrollTop;
     if (positionOfScroll) {
         window.scrollBy(0, -Math.max(1, Math.floor(positionOfScroll / 15)));
-        scrollAnimation = setTimeout("scrollToTop()", 8);
+        scrollAnimation = setTimeout("scrollToTop()", 6);
     } else clearTimeout(scrollAnimation);
 }
 function scrollCheck() {
