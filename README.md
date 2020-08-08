@@ -18,3 +18,7 @@ https://github.com/BrianSteel/Portfolio/blob/master/assets/Brian_Resume.pdf
 
 ### Website link: 😀
 https://briansteel.github.io/Portfolio
+
+### Notice
+If you have the Grammarly extension on your chrome then this creates a problem with the website. It increases the height of the HTML when you press on the textarea. Watch out for that.
+Quick Fix for now: Turn off Grammarly extention for this site.
