@@ -5,6 +5,7 @@
     --secondary: #fafafa;
     --primary-font: 'Roboto', sans-serif;
     --secondary-font: 'Rowdies', cursive;
+    --tertiary-font: 'Recursive', sans-serif;
     --primary-font-color: #243d44;
 }
 
@@ -55,16 +56,18 @@ h3 {
 
 p {
     font-family: var(--primary-font);
-    font-size: 0.8rem;
+    font-size: 0.85rem;
 }
 
 li {
-    font-family: var(--primary-font);
-    font-size: 0.8rem;
+    font-family: var(--tertiary-font);
+    font-size: 0.85rem;
 }
 
 a {
-    font-size: 0.7rem;
+    font-family: var(--tertiary-font);
+    font-size: 0.85rem;
+    color: var(--primary-font-color)
 }
 
 input, textarea {
@@ -211,6 +214,19 @@ input:checked[type="checkbox"]:after {
     align-items: center;
 }
 
+#main section .about-me p span {
+    font-size: 1.3rem;
+}
+
+#main section .about-me p {
+    font-family: var(--tertiary-font);
+    color: var(--primary-font-color);
+    text-align: justify;
+    padding: 0 1rem 0 0;
+    line-height: 1.2rem;
+    font-size: 0.85rem;
+}
+
 #main section .about-me img {
     width: 300px;
     height: 300px;
@@ -225,7 +241,11 @@ input:checked[type="checkbox"]:after {
 }
 
 #main section #about p:nth-of-type(2) {
-    margin: 1rem 0 0 0;
+    margin: 1rem 0 1rem 0;
+}
+
+#main section #about p:nth-of-type(3) {
+    margin: 1rem 0 1rem 0;
 }
 
 #main section .btn {
@@ -322,6 +342,7 @@ input:checked[type="checkbox"]:after {
 #main section #projects img {
     width: 100%;
     height: 80%;
+    /* object-fit: cover; */
 }
 
 #main section #projects h3::before {
@@ -341,6 +362,45 @@ input:checked[type="checkbox"]:after {
     padding-bottom: 2rem;
 }
 
+#projects .grid-items p {
+    font-family: var(--tertiary-font);
+    font-weight: bold;
+}
+
+#projects .grid-items {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #444;
+    font-family: var(--tertiary-font);
+    transition: background-color 0.5s;
+}
+
+.img-text{
+    color: var(--secondary);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center; 
+}
+
+#projects .grid-items:hover .overlay {
+    opacity: 1;
+    transition: all 0.5s;
+  }
+
 /* .........................contact..................... */
 
 #contact-us {
@@ -349,7 +409,7 @@ input:checked[type="checkbox"]:after {
     text-align: center;
 }
 
-#contact-us .contact-items{
+#contact-us .contact-items {
     text-align: center;
 }
 
@@ -428,7 +488,7 @@ footer.footer .move-up span:hover {
     background: #111;
 }
 
-.show{
+.show {
     display: initial;
 }
 
@@ -462,11 +522,11 @@ footer.footer .move-up span:hover {
     .CheckBoxBlock {
         display: block;
     }
-    nav img{
-        display:none;
+    nav img {
+        display: none;
     }
-    #i1, #i2, #i3, #i4{
-        color:var(--secondary);
+    #i1, #i2, #i3, #i4 {
+        color: var(--secondary);
     }
 }
 
@@ -515,6 +575,7 @@ footer.footer .move-up span:hover {
         height: 100px;
     }
 }
+
 @media screen and (max-width: 625px) {
     #main section .about-me {
         display: flex;
