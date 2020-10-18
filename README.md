@@ -10,11 +10,11 @@ Few things to watch out for:
 - not backed by database
 - awesome dark theme (check it out) 😀
 
-
+<!--
 ### Resume
 See my Resume here
 https://github.com/BrianSteel/Portfolio/blob/master/assets/Brian_Resume.pdf
-
+-->
 
 ### Website link: 😀
 https://briansteel.github.io/Portfolio
