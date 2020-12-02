@@ -35,8 +35,10 @@ body nav {
     font-family: var(--secondary-font);
     text-align: center!important;
     padding: 1rem;
+    padding-bottom: 0rem;
     color: #eee;
     overflow: visible;
+    height: 100vh;
 }
 
 h1 {
@@ -514,7 +516,7 @@ footer.footer .move-up span:hover {
         color: var(--secondary);
     }
     .collapse {
-        max-height: initial;
+        max-height: 80vh;
     }
     .toggle {
         display: none;
