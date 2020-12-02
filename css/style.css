@@ -515,7 +515,7 @@ footer.footer .move-up span:hover {
         color: var(--secondary);
     }
     .collapse {
-        max-height: initial;
+        max-height: 100vh;
     }
     .toggle {
         display: none;
